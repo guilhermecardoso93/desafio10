@@ -1,0 +1,243 @@
+:root {
+  --yellow: #ffcc29;
+  --blue: #1d539e;
+  --gray: #828799;
+  --page-background: #f9fbfc;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 50vh;
+  margin: auto;
+
+  background-color: var(--blue);
+  color: var(--page-background);
+}
+
+header h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 65px;
+
+  margin-bottom: 2rem;
+}
+
+header span {
+  width: 553px;
+  height: 50px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+
+  margin-bottom: 10rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  margin-top: 2rem;
+}
+
+.planos {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  top: -8rem;
+
+  width: 25rem;
+  height: 470px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+  border-radius: 8px;
+
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+  transition: all 0.5s;
+}
+
+.planosTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 25rem;
+  height: 76px;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1e2338;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+}
+
+.planosTitle:hover {
+  background-color: var(--yellow);
+  color: #1d539e;
+}
+
+.planosTitle button {
+  width: 94px;
+  height: 32px;
+  left: 783px;
+  top: 322px;
+
+  background: #f9fbfc;
+  border-radius: 40px;
+
+  color: #1d539e;
+  cursor: pointer;
+}
+
+.planosTitle button:hover {
+  background: #1d539e;
+  color: #f9fbfc;
+}
+
+.planos:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.planosPrice {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.planosPriceMain {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 1rem;
+}
+
+.planosPriceMain h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 52px;
+
+  color: #1e2338;
+}
+
+.planosPriceMain h4 {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #828799;
+}
+
+.planosPriceInfo {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #828799;
+
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.planosList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.planosList li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #828799;
+}
+
+.planosList span {
+  margin-left: 1rem;
+}
+
+.planosButton {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-left: 3rem;
+
+  cursor: pointer;
+}
+
+.planosButton button {
+  margin: auto;
+  padding: 12px 24px;
+  width: 296px;
+  height: 51px;
+
+  background: #1d539e;
+  border-radius: 10px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.planosButton button:hover {
+  background: #ffffff;
+  color: #1d539e;
+}
